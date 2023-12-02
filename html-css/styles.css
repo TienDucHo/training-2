@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(57, 65, 75);
+  color: white;
+  font-family: "Open Sans";
+}
+
+#hero {
+  color: rgb(75, 173, 234);
+}
+
+main {
+  color: blanchedalmond;
+}
+
+nav ul {
+  /* main axis -> horizontal*/
+  /* axis axis */
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  /* Moving along the main axis */
+  justify-content: center;
+  /* Moving along the sec axis */
+  align-items: center;
+  color: black;
+  background-color: beige;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:nth-child(1) {
+  flex-grow: 2;
+}
+
+.card:nth-child(2) {
+  flex-grow: 1;
+}
+
+.card {
+  background-color: rgb(45, 91, 75);
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 12px;
+  margin: 12px;
+}
+
+/* Desktop first design */
+
+@media screen and (max-width: 800px) {
+  .card-container {
+    flex-direction: column;
+  }
+}
+
+/* Mobile first 
+
+@media screen and (min-width: 550px) {
+  .card-container {
+    flex-direction: column;
+  }
+}
+*/
